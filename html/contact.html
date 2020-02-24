@@ -107,7 +107,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <form>
+            <form id="form" method="post">
               <div class="form-group">
                 <input id="fullname" name="fullname" type="text" class="form-control" placeholder="Full Name">
               </div>
@@ -115,7 +115,7 @@
                 <input id="email" name="email" type="email" class="form-control" placeholder="you@domain.com">
               </div>
               <div class="form-group">
-                <textarea id="message" name ="message" class="form-control" rows="4" placeholder="Type message here"></textarea>
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Type message here"></textarea>
               </div>
               <div>
                 <button class="btn btn-primary" type="button" onclick="submitToAPI(event)">Send Message</button>
@@ -204,7 +204,7 @@
     <script type="text/javascript">
           function submitToAPI(e) {
                e.preventDefault();
-               var URL = "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod";
+               var URL = "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod/contact";
 
                     var fullnamere = /[A-Za-z]{1}[A-Za-z]/;
                     if (!fullnamere.test($("#fullname").val())) {
@@ -234,7 +234,7 @@
 
                $.ajax({
                  type: "POST",
-                 url : "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod",
+                 url : "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod/contact",
                  dataType: "json",
                  crossDomain: "true",
                  contentType: "application/json; charset=utf-8",
