@@ -204,7 +204,7 @@
     <script type="text/javascript">
           function submitToAPI(e) {
                e.preventDefault();
-               var URL = "https://vy5zlus863.execute-api.us-east-1.amazonaws.com/Production";
+               var URL = "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod";
 
                     var fullnamere = /[A-Za-z]{1}[A-Za-z]/;
                     if (!fullnamere.test($("#fullname").val())) {
@@ -234,7 +234,7 @@
 
                $.ajax({
                  type: "POST",
-                 url : "https://vy5zlus863.execute-api.us-east-1.amazonaws.com/Production",
+                 url : "https://8jfjtayesa.execute-api.us-east-1.amazonaws.com/prod",
                  dataType: "json",
                  crossDomain: "true",
                  contentType: "application/json; charset=utf-8",
