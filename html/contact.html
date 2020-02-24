@@ -13,6 +13,57 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i%7cPermanent+Marker" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+      function submitToAPI(e) {
+           e.preventDefault();
+           var URL = "https://4ixatdntne.execute-api.us-east-2.amazonaws.com/prod";
+
+                var fullnamere = /[A-Za-z]{1}[A-Za-z]/;
+                if (!fullnamere.test($("#fullname").val())) {
+                             alert ("Name can not less than 2 char");
+                    return;
+                }
+                if ($("#email").val()=="") {
+                    alert ("Please enter your email id");
+                    return;
+                }
+
+                var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+                if (!reeamil.test($("#email").val())) {
+                    alert ("Please enter valid email address");
+                    return;
+                }
+
+           var fullname = $("#fullname").val();
+           var email = $("#email").val();
+           var message = $("message").val();
+           var data = {
+              fullname : fullname,
+              email : email,
+              message : message,
+            };
+
+           $.ajax({
+             type: "POST",
+             url : "https://ggo1ov6318.execute-api.us-east-1.amazonaws.com/prod/contact",
+             dataType: "json",
+             crossDomain: "true",
+             contentType: "application/json; charset=utf-8",
+             data: JSON.stringify(data),
+
+
+             success: function () {
+               // clear form and show a success message
+               alert("Successfull");
+               document.getElementById("form").reset();
+           location.reload();
+             },
+             error: function () {
+               // show an error message
+               alert("UnSuccessfull");
+             }});
+         }
+    </script>
   </head>
   <body>
 
@@ -109,16 +160,16 @@
           <div class="col-md-6">
             <form>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Full Name">
+                <input id="fullname" type="text" class="form-control" placeholder="Full Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="you@domain.com">
+                <input id="email" type="email" class="form-control" placeholder="you@domain.com">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="4" placeholder="Type message here"></textarea>
+                <textarea id="message" class="form-control" rows="4" placeholder="Type message here"></textarea>
               </div>
               <div>
-                <button class="btn btn-primary" type="submit">Send Message</button>
+                <button class="btn btn-primary" type="button" onclick="submitToAPI(event)">Send Message</button>
               </div>
             </form>
           </div>
