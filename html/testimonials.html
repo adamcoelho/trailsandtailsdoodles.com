@@ -578,7 +578,7 @@
     <script type="text/javascript">
           function submitToAPI(e) {
                e.preventDefault();
-               var URL = "";
+               var URL = "https://8k2148z9id.execute-api.us-east-1.amazonaws.com/prod/testimonials";
 
                     var firstnamere = /[A-Za-z]{1}[A-Za-z]/;
                     if (!firstnamere.test($("#firstname").val())) {
@@ -624,7 +624,7 @@
 
                $.ajax({
                  type: "POST",
-                 url : "",
+                 url : "https://8k2148z9id.execute-api.us-east-1.amazonaws.com/prod/testimonials",
                  dataType: "json",
                  crossDomain: "true",
                  contentType: "application/json; charset=utf-8",
