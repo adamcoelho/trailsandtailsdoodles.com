@@ -4395,7 +4395,7 @@ button.bg-light:focus {
   background-color: #4e4a4b !important; }
 
 .bg-dark2 {
-  background-color: #F0D7D1 !important; }
+  background-color: #DFC9C4 !important; }
 
 .bg-dark-hr {
   background-color: #152a49 !important; }
@@ -6891,7 +6891,7 @@ section {
     position: absolute; } }
 
 .bg-gradient {
-  background: linear-gradient(0deg, #fff 0%, #f2ccc0 100%); }
+  background: linear-gradient(0deg, #fff 0%, #DFC9C4 100%); }
 
 .bg-gradient-2 {
   background: linear-gradient(0deg, #f6e7e3 0%, #db9c8d 100%); }
