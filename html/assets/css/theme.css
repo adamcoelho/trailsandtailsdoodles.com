@@ -3175,6 +3175,7 @@ input[type="button"].btn-block {
 
 .card-img {
   width: 100%;
+  max-height: 174px;
   border-radius: calc(0.375rem - 0px); }
 
 .card-img-top {
