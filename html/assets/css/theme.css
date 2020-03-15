@@ -3175,7 +3175,7 @@ input[type="button"].btn-block {
 
 .card-img {
   width: 100%;
-  max-height: 174px;
+  max-height: 500px;
   border-radius: calc(0.375rem - 0px); }
 
 .card-img-top {
@@ -4393,7 +4393,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #4e4a4b !important; }
+  background-color: #404040 !important; }
 
 .bg-dark2 {
   background-color: #DFC9C4 !important; }
@@ -6911,14 +6911,14 @@ section {
   height: 50%;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(21, 42, 73, 0), #4e4a4b); }
+  background: linear-gradient(rgba(64, 64, 64, 0), #404040); }
 
 .overlay-dark .container {
   position: relative;
   z-index: 1; }
 
 .overlay-dark.overlay-top:after {
-  background: linear-gradient(#4e4a4b, rgba(21, 42, 73, 0));
+  background: linear-gradient(#404040, rgba(64, 64, 64, 0));
   bottom: auto;
   top: 0; }
 
