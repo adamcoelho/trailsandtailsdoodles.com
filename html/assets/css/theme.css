@@ -4396,7 +4396,7 @@ button.bg-light:focus {
   background-color: #404040 !important; }
 
 .bg-dark2 {
-  background-color: #DEA598 !important; }
+  background-color: #DFC9C4 !important; }
 
 .bg-dark-hr {
   background-color: #152a49 !important; }
@@ -6892,10 +6892,10 @@ section {
     position: absolute; } }
 
 .bg-gradient {
-  background: linear-gradient(0deg, #f6e7e3 0%, #db9c8d 100%); }
+  background: linear-gradient(0deg, #fff 0%, #DFC9C4 100%); }
 
 .bg-gradient-2 {
-  background: linear-gradient(0deg, #f9f4f7 0%, #d4b8cb 100%); }
+  background: linear-gradient(0deg, #f6e7e3 0%, #db9c8d 100%); }
 
 .bg-gradient-3 {
   background: linear-gradient(90deg, #dc3545 0%, #fd7e14 100%); }
@@ -6975,7 +6975,7 @@ ul.avatars {
   font-size: .875rem; }
 
 .badge-lg {
-  font-size: 2.5rem; }
+  font-size: 2.25rem; }
 
 .breadcrumb-item {
   display: flex;
@@ -9084,7 +9084,7 @@ section {
   .bg-triangle.bg-triangle-bottom-left {
     transform: scaleX(-1); }
   .bg-triangle.bg-dark polygon {
-    fill: #DEA598; }
+    fill: #F0D7D1; }
   .bg-triangle.bg-secondary polygon {
     fill: #6c757d; }
   .bg-triangle.bg-primary polygon {
